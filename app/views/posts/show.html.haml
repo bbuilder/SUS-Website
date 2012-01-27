@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @post.title
+%p
+  %b Description:
+  = @post.description
+%p
+  %b Department name:
+  = @post.department_name
+%p
+  %b Details link:
+  = @post.details_link
+
+= link_to 'Edit', edit_post_path(@post)
+\|
+= link_to 'Back', posts_path
